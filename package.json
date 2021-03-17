@@ -1,0 +1,29 @@
+{
+  "name": "monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriandifelice/monitor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriandifelice/monitor/issues"
+  },
+  "homepage": "https://github.com/adriandifelice/monitor#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.22.0",
+    "node-fetch": "^2.6.1",
+    "nodemailer": "^6.5.0",
+    "puppeteer": "^8.0.0"
+  }
+}
