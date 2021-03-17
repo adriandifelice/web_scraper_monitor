@@ -1,10 +1,10 @@
 const {getContent} = require('./scraper');
 const sendMail = require('./notification');
 
-
 const url = "https://www.sharp.com/health-classes/volunteer-registration-grossmont-center-covid-19-vaccine-clinic-2558"
 let prevResults = [];
 let newResults = [];
+let interval = 60 * 1000 //60S econds
 
 async function run () {
   let isTrue = true;
@@ -29,4 +29,4 @@ function compare() {
   run()
 }
 
-setInterval(compare, 10*1000);
+setInterval(compare, interval);

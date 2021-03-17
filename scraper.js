@@ -10,10 +10,8 @@ async function getContent (url) {
       .then((response) => {
           const html = response.data;
           const $ = cheerio.load(html);
-          // $(".one-third > div").text();
           $(".one-third > div").each(function(i, el){
             results[i] = $(el).text();
-            
           }
           );
           return results;
